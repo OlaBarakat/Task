@@ -1,0 +1,18 @@
+.header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .icon-search{
+        margin-left: -30px;
+        margin-top: 5px;
+        color: gainsboro;
+    }
+    .alert{
+        margin-top: 5px;
+    }
+    .user{
+        margin-top: 5px;
+    }
+    ::placeholder{
+        color: gainsboro;
+    }
+}

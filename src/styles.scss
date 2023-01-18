@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@font-face {
+    font-family: Inter;
+    src: url(./assets/font/Inter/static/Inter-Regular.ttf);
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url(./assets/font/Montserrat/static/Montserrat-Regular.ttf);
+  }
+  :root {
+    --fontFamilyen: Inter;
+    --fontFamilyMonster:Montserrat;
+    
+
+  }
+  body{
+    height: 100%;
+  }
+  .accordion-body{
+    margin: 20px 5px;
+}
+  .accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+
+    background: #F6F6F6 !important;
+border-radius: 6px 6px 0px 0px;
+     box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color); 
+}
+@media(max-width:700px){
+  .accordion-button:not(.collapsed)::after  , .accordion-button::after {
+   
+        
+        
+    margin-top: 40px;
+}
+}
