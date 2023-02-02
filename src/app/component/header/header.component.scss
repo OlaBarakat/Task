@@ -1,18 +1,45 @@
-.header{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    .icon-search{
-        margin-left: -30px;
-        margin-top: 5px;
-        color: gainsboro;
+.header {
+    .Logo{
+        position: relative;
+        top: 30px;
+    
     }
-    .alert{
-        margin-top: 5px;
+    .ListNav {
+        justify-content: end !important;
+
+        ul {
+            text-align: end;
+            justify-content: end;
+            display: contents;
+
+            li {
+                .ActivateLink{
+                    color: #C9AA5C;
+                }
+                a ,.BtnMenu {
+                    font-family: var(--fontFamilyen);
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 27px;
+                   margin:  0 10px;
+                    color: #FFFFFF;
+                }
+            }
+        }
     }
-    .user{
-        margin-top: 5px;
-    }
-    ::placeholder{
-        color: gainsboro;
-    }
+}
+:host ::ng-deep
+{ .dropdown-toggle::after {
+color: #C9AA5C !important;
+
+}
+.navbar-toggler {
+   
+    
+    color: white !important;
+    background-color: transparent !important;
+    border: var(--bs-border-width) solid white !important;
+
+}
 }

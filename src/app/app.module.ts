@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { NgbAlertModule, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAlertModule, NgbCollapseModule, NgbDropdownModule, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap/accordion/accordion.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './component/home/home.component';
-import { NavbarComponent } from './component/navbar/navbar.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { LandingPageComponent } from './component/home/landing-page/landing-page.component';
+import { GovernorateComponent } from './component/home/governorate/governorate.component';
+import { NavbarComponent } from './component/home/navbar/navbar.component';
 
 
 
@@ -17,12 +20,18 @@ import { NavbarComponent } from './component/navbar/navbar.component';
     AppComponent,
     NavbarComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    LandingPageComponent,
+    GovernorateComponent
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    NgbPaginationModule, NgbAlertModule,
+    NgbPaginationModule,
+     NgbAlertModule,
+     NgbCollapseModule,
+     NgbDropdownModule,
     NgbModule,
     AppRoutingModule
   ],

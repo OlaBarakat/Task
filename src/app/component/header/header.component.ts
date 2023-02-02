@@ -9,10 +9,10 @@ import { faCircleUser, faGear, faMagnifyingGlass } from '@fortawesome/free-solid
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  faGear = faGear;
-  faBell = faBell as IconProp;
-  faCircleUser= faCircleUser ;
-faMagnifyingGlass = faMagnifyingGlass;
+
+  
+isMenuCollapsed = true;
+
   constructor() { }
 
   ngOnInit(): void {
